@@ -1,0 +1,97 @@
+body {
+    font-family: $base-font-family;
+    line-height: $line-height04;
+    color: $grey05;
+}
+
+/*
+ * Styles for links
+ * These are a little sketchy just because of how general they are and how
+ * many things they have the potential to effect. There is a class for a single
+ * anchor tag and a class to effect all anchor child nodes
+ */
+
+.u-bodyLink,
+.u-bodyLinks a {
+    color: $blue01;
+    text-decoration: none;
+    border-bottom: 1px solid;
+}
+
+.u-bodyLink:hover,
+.u-bodyLinks a:hover {
+    border-bottom-color: transparent;
+}
+
+.u-cleanLink,
+.u-cleanLinks a {
+    color: inherit;
+    text-decoration: none;
+    font-weight: inherit;
+    border-bottom: none;
+}
+
+/**
+ * Typography
+ * Double stranded typography so you can have any header
+ * look like any other header
+ */
+
+h1, .as-h1,
+h2, .as-h2,
+h3, .as-h3,
+h4, .as-h4,
+h5, .as-h5,
+h6, .as-h6 {
+    margin: 0;
+    line-height: $line-height01;
+    font-weight: $font-weight-normal;
+}
+
+h1,
+.as-h1 {
+    font-size: $font-size-ash1;
+}
+
+h2,
+.as-h2 {
+    font-size: $font-size-ash2;
+}
+
+h3,
+.as-h3 {
+    font-size: $font-size-ash3;
+}
+
+h4,
+.as-h4 {
+    font-size: $font-size-ash4;
+}
+
+h5,
+.as-h5 {
+    font-size: $font-size-ash5;
+}
+
+h6,
+.as-h6 {
+    font-size: $font-size-ash6;
+}
+
+p,
+.as-p {
+    margin-top: 0;
+}
+
+small,
+.as-small {
+    font-size: 75%;
+}
+
+/**
+ * Text alignment utilities
+ */
+
+.u-textCenter { text-align: center; }
+.u-textLeft   { text-align: left;   }
+.u-textRight  { text-align: right;  }

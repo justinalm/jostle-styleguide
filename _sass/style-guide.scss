@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}
+
+@mixin relative-font-size($ratio) {
+  font-size: $font-size-ash4 * $ratio;
+}
+
+// Import partials.
+@import
+  "style-guide/variables",
+  "style-guide/mixins",
+  "style-guide/colours",
+  "style-guide/typography",
+  "style-guide/spacing-units",
+  "style-guide/layout",
+  "style-guide/guide",
+  "style-guide/grid",
+  "style-guide/borders",
+  "style-guide/buttons",
+  "style-guide/inputs",
+  "style-guide/tables"
+;
