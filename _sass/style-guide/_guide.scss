@@ -6,7 +6,6 @@
 .Guide-nav {
     height: auto;
     background-color: $white;
-    border-right: 1px solid $grey02;
     padding: 0;
     margin: 0;
     @include box-shadow;
@@ -25,7 +24,7 @@
     display: block;
     padding: $spacing-unit $spacing-unit*2;
     border-bottom: 1px solid $grey02;
-    transition: background-color 500ms;
+    transition: background-color 200ms;
 }
 
 .Guide-nav-link:hover {
@@ -33,19 +32,23 @@
 }
 
 .Guide-nav-header {
-    padding: $spacing-unit $spacing-unit*2;
+    line-height: 1.2;
     color: $grey05;
+    padding: $spacing-unit/2 $spacing-unit*2;
     border-bottom: 1px solid $grey04;
+    box-sizing: border-box; 
 }
 
 @media (min-width: 38em) {
 
     .Guide-nav {
         position: fixed;
+        min-width: 192px;
+        max-width: 192px;
         height: 100vh;
         top: 0;
         left: 0;
-        min-width: 192px;
+        border-right: 1px solid $grey02;
         box-shadow: none;
     }
 
@@ -108,7 +111,7 @@
     background-color: $grey01;
     transform: translateY(-90%);
     opacity: 0.5;
-    transition: transform 500ms, opacity 500ms;
+    transition: transform 200ms, opacity 200ms;
 }
 
 .Guide-header:hover {
